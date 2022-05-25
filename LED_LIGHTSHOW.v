@@ -14,7 +14,7 @@ reg led_switch = 0; //switch that determines which LED has high duty cycle and w
 reg[19:0] on5 = 943718; //what number the count has to count up to for the LED to have 5% duty cycle
 reg[19:0] on90 = 52429; //what number the count has to count up to for the LED to have a 90% duty cycle
 parameter ON = 8'b1111_1111; //constant for on
-parameter OFF = 8'b0000_0000; //constant for off
+   parameter OFF = 8'b0000_0000; //constant for off (all 0's)
 
 always @(posedge clk) //Sensitivity list depends on clk
 begin
